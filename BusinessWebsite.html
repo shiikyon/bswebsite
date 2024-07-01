@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <link rel="stylesheet" href="bstyle.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">EZ PC</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Desktop</a>
+                <a href="#">Laptop</a>
+                <a href="#">Build A PC</a>
+                <a href="#">Price List</a>
+                <a href="#">Contact</a>
+                <a href="#" id="login-link">Login</a>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="assets/banner.jpg" alt="Banner">
+    </section>
+    <section class="product-categories scroll-container">
+        <div class="category">
+            <img src="assets/processor.jpg" alt="Processor">
+            <h3>Processor</h3>
+        </div>
+        <div class="category">
+            <img src="assets/motherboard.jpg" alt="Motherboard">
+            <h3>Motherboard</h3>
+        </div>
+        <div class="category">
+            <img src="assets/gpu.jpg" alt="Graphics Card">
+            <h3>Graphics Card</h3>
+        </div>
+        <div class="category">
+            <img src="assets/ram.jpg" alt="Memory">
+            <h3>Memory</h3>
+        </div>
+        <div class="category">
+            <img src="assets/ssd.avif" alt="SSD">
+            <h3>Solid State Drives</h3>
+        </div>
+        <div class="category">
+            <img src="assets/psu.jpg" alt="Power Supply">
+            <h3>Power Supply</h3>
+        </div>
+        <div class="category">
+            <img src="assets/pc case.avif" alt="PC Case">
+            <h3>PC Case</h3>
+        </div>
+        <div class="category">
+            <img src="assets/laptop.png" alt="Laptop">
+            <h3>Laptop</h3>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">EZ PC</div>
+            <div class="footer-contacts">
+                <a href="#">Contact Us</a>
+                <a href="#">Support</a>
+                <a href="FAQ"></a>
+            </div>
+            <div class="footer-end">
+                <p>All rights reserved &copy; 2024 EZ PC</p>
+            </div>
+        </div>
+    </footer>
+    <div id="login-popup" class="modal">
+        <div class="login-content">
+            <span class="close">&times;</span>
+            <h2>Login to your account</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="userpassword">Password:</label>
+                <input type="password" id="userpassword" name="userpassword" required><br><br>
+                <button type="submit">Login</button>
+                <button type="button" id="create-account">Create a new account</button>
+            </form>
+        </div>
+    </div>
+    <script src="bscript.js"></script>
+</body>
+</html>
